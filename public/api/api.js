@@ -7,7 +7,7 @@ function create() {
     var email = document.getElementById('email').value;
     var password = document.getElementById('password').value; 
     //var url = '/account/create/' + name + '/' + email + '/' + password;
-    var url = 'http://165.227.200.69/account/create/' + name + '/' + email + '/' + password;
+    var url = 'http://165.227.200.69:3001/account/create/' + name + '/' + email + '/' + password;
 
     superagent
         .get(url)
@@ -32,7 +32,7 @@ function login() {
     var email = document.getElementById('email').value;
     var password = document.getElementById('password').value;
     //var url = '/account/login/' + email + '/' + password;
-    var url = 'http://165.227.200.69/account/login/' + email + '/' + password;
+    var url = 'http://165.227.200.69:3001/account/login/' + email + '/' + password;
 
     superagent
         .get(url)
@@ -56,7 +56,7 @@ function deposit() {
     var email = document.getElementById('email').value;
     var dep_amount = document.getElementById('amount').value;
     //var url = '/account/deposit/' + email + '/' + dep_amount;
-    var url = 'http://165.227.200.69/account/deposit/' + email + '/' + dep_amount;
+    var url = 'http://165.227.200.69:3001/account/deposit/' + email + '/' + dep_amount;
 
     superagent
         .get(url)
@@ -80,7 +80,7 @@ function withdraw() {
     var email = document.getElementById('email').value;
     var with_amount = document.getElementById('amount').value;
     //var url = '/account/withdraw/' + email + '/' + with_amount;
-    var url = 'http://165.227.200.69/account/withdraw/' + email + '/' + with_amount;
+    var url = 'http://165.227.200.69:3001/account/withdraw/' + email + '/' + with_amount;
 
     superagent
         .get(url)
@@ -103,7 +103,7 @@ function transactions() {
     // -------------------------------------
     var email = document.getElementById('email').value;
     //var url = '/account/transactions/' + email;
-    var url = 'http://165.227.200.69/account/transactions/' + email;
+    var url = 'http://165.227.200.69:3001/account/transactions/' + email;
 
     superagent
         .get(url)
@@ -128,7 +128,7 @@ function balance() {
     // -------------------------------------
     var email = document.getElementById('email').value;
     //var url = '/account/get/' + email;
-    var url = 'http://165.227.200.69/account/get/' + email;
+    var url = 'http://165.227.200.69:3001/account/get/' + email;
     
     superagent
         .get(url)
@@ -152,7 +152,7 @@ function allData() {
     //  Get all data
     // -------------------------------------
     //var url = '/account/all'
-    var url = 'http://165.227.200.69/account/all'
+    var url = 'http://165.227.200.69:3001/account/all'
 
     superagent
         .get(url)
