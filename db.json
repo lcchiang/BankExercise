@@ -1,0 +1,36 @@
+{
+  "accounts": [
+    {
+      "name": "Luke Chiang",
+      "email": "lcchiang@mit.edu",
+      "balance": 0,
+      "password": "secret",
+      "transactions": []
+    },
+    {
+      "name": "Bob's Burger",
+      "email": "BBurger@patty.com",
+      "balance": -1000,
+      "password": "asdf",
+      "transactions": [
+        {
+          "deposit": "2000"
+        },
+        {
+          "withdraw": "3000"
+        }
+      ]
+    },
+    {
+      "name": "Holly Y",
+      "email": "YBank@mit.edu",
+      "balance": 100000,
+      "password": "asdf",
+      "transactions": [
+        {
+          "deposit": "100000"
+        }
+      ]
+    }
+  ]
+}
